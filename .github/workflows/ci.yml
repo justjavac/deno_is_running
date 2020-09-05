@@ -23,6 +23,9 @@ jobs:
       - name: Lint
         run: deno lint --unstable
 
+      - name: Test
+        run: deno test --unstable
+
       - name: Release
         uses: softprops/action-gh-release@v1
         if: |
